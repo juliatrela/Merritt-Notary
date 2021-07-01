@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-		<Seo title="Merritt Notary" image="../images/mikhail-pavstyuk-unsplash.jpg" />
+		<Seo title="Home" />
 		<Navigation link1={content.navigation.link1Name} link2={content.navigation.link2Name} link3={content.navigation.link3Name} />
 		<main id="page-wrap">
 			<BackgroundImage titleFirst={content.heroTitleFirst} titleSecond={content.heroTitleSecond} ariaLabelAltText={content.heroImageAlt} />
@@ -69,7 +69,7 @@ const IndexPage = () => {
 										<p>{content.contact.contactInfo.hours}</p>
 									</div>
 									<div className="map-container">
-										<div><iframe title="Location of Merritt Notary on map" aria-label="" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10234.610835284626!2d-120.7859119!3d50.1115071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x285e91eeb4f24653!2sJulia%20Trela%20Notary%20Public!5e0!3m2!1sen!2sca!4v1623868236196!5m2!1sen!2sca" width="550" height="300" style={{border: '0'}} allowFullScreen loading="lazy"></iframe></div>
+										<div><iframe title="Location of Merritt Notary on map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10234.554860995291!2d-120.78501100000001!3d50.111769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x285e91eeb4f24653!2sJulia%20Trela%20Notary%20Public!5e0!3m2!1sen!2sca!4v1625159346653!5m2!1sen!2sca&amp;z=20" width="550" height="300" style={{border: '0'}} allowFullScreen loading="lazy"></iframe></div>
 									</div>
 								</div>
 							</div>

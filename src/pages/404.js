@@ -10,7 +10,7 @@ const NotFoundPage = () => {
 	return (
 		<Layout>
 			<section className="section__page-not-found">
-				<Seo title="Page Not Found | Merritt Notary" lang="en" />
+				<Seo title="404 Page Not Found" />
 				<StaticImage 
 					src="../../images/logo.png"  
 					alt="Julia Trela Notary Public Logo"
