@@ -83,8 +83,12 @@
 }
 
 .mobile {
-    .logo div {
-        background-color: transparent !important;
+    .logo {
+        margin-left: pxToEm(14);
+
+        div {
+            background-color: transparent !important;
+        }
     }
 
     .mobile-only {
