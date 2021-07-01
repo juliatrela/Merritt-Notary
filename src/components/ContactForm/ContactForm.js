@@ -4,8 +4,9 @@ import './contact-form.scss';
 
 const ContactForm = ({copy, formSuccess, name, email, phone, message, submit}) => {
     const handleSubmit = e => {
+		e.preventDefault();
 		let form = document.getElementById('contact-form');
-		const data = new FormData(form);
+		const data = new FormData(form)
 		data.append('contact__form', 'contact')
 		fetch('/', {
 			method: 'POST',
@@ -18,13 +19,13 @@ const ContactForm = ({copy, formSuccess, name, email, phone, message, submit}) =
 		.catch(er => {
 			form.innerHTML = `<div class="submit-container"><div class="form__error">${er}</div></div>`;
 		})
-		e.preventDefault();
     }
     
     return (
         <div className="contact-us-form">
             <p>{copy}</p>
-            <form id="contact-form" className="contact__form" method="POST" name="contactUs" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} action="/">
+            <form id="contact-form" className="contact__form" method="POST" name="Contact Form" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} action="/">
+                <input type="hidden" name="form-name" value="Contact Form" />
                 <div className="form-group hidden" aria-hidden="true">
                     <input type="hidden" name="contact" value="contactUs" />
                     <label>Don’t fill this out if you’re human:</label>
