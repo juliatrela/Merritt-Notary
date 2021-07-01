@@ -1,0 +1,13 @@
+@import "styles/main.scss";
+
+.section__page-not-found {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: pxToEm(80);
+
+    h1 {
+        padding-bottom: pxToEm(5);
+    }
+}

@@ -1,0 +1,186 @@
+@import "styles/main.scss";
+
+.primary-nav {
+    padding: pxToEm(5) pxToEm(10) pxToEm(5) pxToEm(5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+    background-color: $white;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
+    shape-rendering: crispEdges;
+
+    @include tablet {
+        justify-content: space-between;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        max-width: pxToEm(1500);
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 0 auto;
+
+        @include tablet {
+            margin: 0;
+        }
+
+        div {
+            background-color: transparent !important;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        padding-top: pxToEm(10);
+
+        @include tablet {
+            justify-content: flex-end;
+            padding-top: 0;
+        }
+
+        li {  
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                padding-right: pxToEm(20);
+            }
+        
+            a {
+                font-family: 'Work Sans', sans-serif;
+                font-size: pxToEm(20);
+                letter-spacing: pxToEm(1.5);
+                text-decoration: none;
+                color: $black;
+                font-weight: 700;
+                transition: 0.2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+                
+                &:hover:after {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+
+        }
+    }
+
+    @include mobileMenu { 
+        display: none; 
+    } 
+}
+
+.mobile {
+    .logo div {
+        background-color: transparent !important;
+    }
+
+    .mobile-only {
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        background-color: $white;
+        width: 100%;
+        max-width: pxToEm(1500);
+
+        li {
+            padding-bottom: pxToEm(10);
+        }
+    }
+
+    .bm-burger-button {
+        position: fixed;
+        width: 25px;
+        height: 20px;
+        right: 20px;
+        top: 40px;
+
+        button:focus {
+            outline: 1px dotted $primary;
+        }
+    }
+
+    .bm-burger-bars {
+        background: $primary;
+    }
+
+    .bm-burger-bars-hover {
+        background: $primary;
+    }
+
+    .bm-cross-button {
+        width: 20px !important;
+        top: 25px !important;
+        right: 25px !important;
+        height: 20px !important;
+
+        button {
+            &:focus {
+                outline: 1px dotted $primary;
+            }
+        }
+    }
+
+    .bm-cross {
+        background: $primary;
+    }
+
+    .bm-menu {
+        background: $white;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+    }
+
+    .bm-item-list {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .bm-item {
+        display: flex;
+        flex-direction: column;
+
+        &:focus {
+            outline: none;
+        }
+
+        a:not(.btn) {
+            font-family: 'Work Sans', sans-serif;
+            font-size: pxToEm(20);
+            letter-spacing: pxToEm(1.5);
+            text-decoration: none;
+            color: $black;
+            font-weight: 700;
+            transition: 0.2s ease-in-out;
+            margin-top: pxToEm(10);
+        }
+    }
+
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+        top: 0;
+    }
+
+    .bm-menu-wrap {
+        top: 0;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}

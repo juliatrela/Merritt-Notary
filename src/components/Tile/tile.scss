@@ -1,0 +1,66 @@
+@import "styles/main.scss";
+
+h3 {
+    text-align: center;
+    margin-bottom: pxToEm(20);
+    margin-top: pxToEm(20);
+}
+
+.tile {
+    background-color: $white;
+    justify-content: center;
+    flex: 100%;
+    margin-top: pxToEm(60);
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 25%);
+    padding: pxToEm(20);
+
+    @include desktop {
+        flex: 25%;
+        margin-top: pxToEm(40);
+        margin: pxToEm(10);
+    }
+
+    p {
+        padding-top: 0;
+        text-align: center;
+
+        @include tablet {
+            padding: 0 pxToEm(5);
+        }
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        svg {
+            color: $primary;
+            margin-right: pxToEm(5);
+        }
+    }
+
+}
+
+.tile__icon {
+    background-color: $primary;
+    border-radius: 100%;
+    width: pxToEm(100);
+    height: pxToEm(100);
+    margin: 0 auto;
+    margin-top: pxToEm(-65);
+
+    svg {
+        color: $white;
+        margin-top: pxToEm(-50);
+        width: pxToEm(50);
+        height: pxToEm(50);
+        margin: auto;
+        display: block;
+        height: auto;
+        padding: pxToEm(25) pxToEm(20);
+    }
+}

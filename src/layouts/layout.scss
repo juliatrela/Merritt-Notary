@@ -1,0 +1,174 @@
+@import "styles/main.scss";
+
+* {
+	padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    outline: none;
+    width: max-content;
+    outline: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+
+    &:focus {
+        outline: 1px dotted $primary;
+    }
+}
+
+button {
+    &:focus {
+        outline: 1px solid $black;
+        outline-offset: 2px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.layout__section {
+    margin: 0 auto; 
+    color: $white;
+    max-width: pxToEm(1200);
+    letter-spacing: pxToEm(0.5);
+    
+    .content-wrapper {
+        margin-top: pxToEm(100);
+
+        @include tablet {
+            margin-top: pxToEm(110);
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @include mobile {
+        max-width: pxToEm(1500);
+    }
+
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+        font-size: pxToEm(60);
+        letter-spacing: pxToEm(0.5);
+        line-height: 1em;
+
+        @include tablet {
+            font-size: pxToEm(100);
+        }
+    }
+
+    h2 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: pxToEm(28);
+        font-weight: 700;
+        letter-spacing: pxToEm(0.6);
+        margin: 0;
+
+        @include tablet {
+            font-size: pxToEm(35);
+        }
+
+        @include desktop {
+            font-size: pxToEm(40);
+        }
+    }
+
+    h3 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: pxToEm(20);
+        letter-spacing: pxToEm(1);
+        font-weight: 700;
+
+        @include desktop {
+            font-size: pxToEm(24);
+        }
+    }
+
+    p {
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        line-height: pxToEm(30);
+        margin-bottom: pxToEm(5);
+
+        @include tablet {
+            font-size: pxToEm(16);
+        }
+  
+        a {
+            color: $black;
+            font-weight: 700;
+            text-decoration: underline;
+
+            &:hover {
+                color: $primary;
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+
+    label, input, textarea {
+        font-family: 'Lora', sans-serif;
+        line-height: pxToEm(30);
+        font-size: pxToEm(14);
+        resize: none;
+
+        &:focus-visible {
+            outline: 1px dotted $primary;
+            outline-offset: 1px;
+        }
+
+        @include tablet {
+            font-size: pxToEm(16);
+        }
+    }
+
+    .btn {
+        font-family: 'Work Sans', sans-serif;
+        padding: 10px 20px;
+        outline: none;
+        font-weight: 700;
+        letter-spacing: pxToEm(1);
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        background-color: $primary;
+        color: $white;
+        border: 2px solid transparent;
+        transition: 0.2s ease-in-out;
+       
+        &:hover {
+            background-color: $primary-hover;
+            color: $white;
+            border: 2px solid $primary-hover;
+        }
+
+        &:focus {
+            outline: 1px dotted $primary;
+            color: $white;
+            outline-offset: 2px;
+        }
+    }
+
+    li {
+        font-family: 'Lora', sans-serif;
+        font-size: pxToEm(16);
+        padding-bottom: pxToEm(5);
+    }
+
+    ul, ol {
+        margin-bottom: 0;
+
+        @include tablet {
+            padding-top: 0;
+        }
+    }
+}

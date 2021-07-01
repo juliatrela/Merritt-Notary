@@ -1,0 +1,79 @@
+@import "styles/main.scss";
+
+.contact-us-form {
+    flex-direction: row;
+    order: 1;
+
+    @include tablet {
+        flex: 50%;
+        order: 2;
+    }
+
+    @include desktop {
+        flex: 40%;
+    }
+
+    p {
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+
+    .contact__form {
+        label, input, textarea, select {
+            box-sizing: border-box;
+            max-width: 100%;
+            color: $black;
+            display: block;
+            width: 100%;
+            font-weight: 500;
+            padding-right: pxToEm(10);
+            font-size: pxToEm(14);
+        }
+
+        label {
+            padding: pxToEm(8) 0 pxToEm(8) 0;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        input, textarea, select {
+            padding: pxToEm(8);
+            border: 2px solid $darkGrey;
+        }
+
+        .btn {
+            margin-top: pxToEm(10);
+        }
+    }
+    
+    .optional::after {
+        content: '- Optional';
+        color: $darkGrey;
+        font-size: pxToEm(12);
+        padding-left: pxToEm(5);
+        margin-top: pxToEm(2);
+    }
+}
+
+.form__success,
+.form__error {
+    color: $black;
+    font-family: 'Work Sans', sans-serif;
+    padding: pxToEm(10);
+    margin-top: pxToEm(10);
+}
+
+.form__success {
+    background-color: $green;
+}
+
+.form__error {
+    background-color: $primary;
+}
+
+.submit-container {
+    height: 515px;
+}

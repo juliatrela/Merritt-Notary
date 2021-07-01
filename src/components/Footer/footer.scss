@@ -1,0 +1,24 @@
+@import "styles/main.scss";
+
+.footer__section {
+    color: $black;
+    background-color: $lightGrey;
+    font-size: pxToEm(10);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: pxToEm(20) 0;
+
+    @include tablet {
+        padding: pxToEm(40) 0;
+    }
+
+    .footer__copyright {
+        padding-top: pxToEm(20);
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "styles/main.scss";
+
+.background-img__section {
+    .hero-img {
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../images/bailey-anselme-unsplash.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 450px;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 100px;
+        background-attachment: scroll;
+
+        @include tablet {
+            top: 110px;
+            background-attachment: fixed;
+            min-height: 650px;
+        }
+    }
+
+    .copy {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        z-index: 10;
+        margin-top: pxToEm(-50);
+
+        @include tablet {
+            margin-top: pxToEm(50);
+        }
+    }
+}
