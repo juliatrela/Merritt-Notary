@@ -30,7 +30,6 @@
         top: 50%;
         transform: translate(-50%, -50%);
         color: $white;
-        z-index: 10;
         margin-top: pxToEm(-50);
 
         @include tablet {
