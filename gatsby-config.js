@@ -43,7 +43,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://merrittnotary.com',
+        host: 'https://merrittnotary.ca',
+        sitemap: '',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
