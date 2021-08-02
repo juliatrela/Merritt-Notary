@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from 'prop-types';
+import PhoneInput from 'react-phone-number-input/input';
 import './contact-form.scss';
 
 const ContactForm = ({copy, formSuccess, name, email, phone, message, submit}) => {
+    const [value, setValue] = useState();
+    
     const handleSubmit = e => {
 		e.preventDefault();
 		let form = document.getElementById('contact-form');
@@ -41,7 +44,7 @@ const ContactForm = ({copy, formSuccess, name, email, phone, message, submit}) =
                 </div>
                 <div className="form-group">
                     <label htmlFor="phone" id="label-phone">{phone}</label>
-                    <input type="tel" aria-labelledby="label-phone" name="phone" className="form-control" id="inputPhone" required="required" aria-required="true" placeholder="Enter your phone number"/>
+                    <PhoneInput country="CA" value={value} onChange={setValue} aria-labelledby="label-phone" name="phone" className="form-control" id="inputPhone" required="required" aria-required="true" placeholder="Enter your phone number"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="message" id="label-message">{message}</label>

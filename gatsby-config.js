@@ -5,9 +5,9 @@ module.exports = {
     description: "Notary Public office; by appointment only. Notarizations, Real Estate and Personal Planning",
     keywords: "interior B.C, notarizations, real estate, refinance, transfer, will, testament, power of attorney, Merritt Notary, Merritt, British Columbia, notary, notary public, Merritt notary public, travel consent, invitation letter, proof of life",
     url: 'https://merrittnotary.ca',
-    image: "/src/images/bailey-anselme-unsplash-sharing.png",
+    image: "./public/static/bailey-anselme-unsplash-sharing.png",
     siteName: "Julia Trela Notary Public",
-    titleTemplate: "Julia Trela Notary Public - %s",
+    titleTemplate: "%s | Julia Trela Notary Public",
   },
   plugins: [
     "gatsby-plugin-sass",

@@ -54,11 +54,15 @@ button {
     h1 {
         font-family: 'Work Sans', sans-serif;
         font-weight: 700;
-        font-size: pxToEm(60);
+        font-size: pxToEm(45);
         letter-spacing: pxToEm(0.5);
         line-height: 1em;
 
         @include tablet {
+            font-size: pxToEm(60);
+        }
+
+        @include desktop {
             font-size: pxToEm(100);
         }
     }
