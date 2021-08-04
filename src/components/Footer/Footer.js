@@ -11,6 +11,7 @@ const Footer = () => {
                 alt="Notary Seal in Red"
                 layout="fixed"
                 width={100} />
+            <div className="footer__copyright"><p>&copy;{date} - Merritt Notary</p></div>
         </section>
     )
 }
