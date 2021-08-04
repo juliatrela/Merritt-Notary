@@ -13,12 +13,4 @@
     @include tablet {
         padding: pxToEm(40) 0;
     }
-
-    .footer__copyright {
-        padding-top: pxToEm(20);
-
-        p {
-            margin-bottom: 0;
-        }
-    }
 }
