@@ -69,7 +69,7 @@ const IndexPage = () => {
 										<p>{content.contact.contactInfo.hours}</p>
 									</div>
 									<div className="map-container">
-										<div><iframe title="Location of Merritt Notary on map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10234.554860995291!2d-120.78501100000001!3d50.111769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x285e91eeb4f24653!2sJulia%20Trela%20Notary%20Public!5e0!3m2!1sen!2sca!4v1625159346653!5m2!1sen!2sca&amp;z=20" width="550" height="300" style={{border: '0'}} allowFullScreen loading="lazy"></iframe></div>
+										<div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.6527099202267!2d-120.78810058428564!3d50.11150707943005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5481916642160a91%3A0x285e91eeb4f24653!2sJulia%20Trela%20Notary%20Public!5e0!3m2!1sen!2sca!4v1628358489989!5m2!1sen!2sca" width="550" height="300" style={{border: '0'}} allowfullscreen="" loading="lazy"></iframe></div>
 									</div>
 								</div>
 							</div>
