@@ -1,13 +1,13 @@
 const path = require('path');
 module.exports = {
   siteMetadata: {
-    title: "Merritt Notary",
+    title: "Julia Trela Notary Public",
     description: "Notary Public office; by appointment only. Notarizations, Real Estate and Personal Planning",
-    keywords: "interior B.C, notarizations, real estate, refinance, transfer, will, testament, power of attorney, Merritt Notary, Merritt, British Columbia, notary, notary public, Merritt notary public, travel consent, invitation letter, proof of life",
+    keywords: "Merritt BC notary, interior B.C, notarizations, real estate, refinance, transfer, will, testament, power of attorney, Merritt Notary, Merritt, British Columbia, notary, notary public, Merritt notary public, travel consent, invitation letter, proof of life",
     url: 'https://merrittnotary.ca',
-    image: "./public/static/bailey-anselme-unsplash-sharing.png",
+    image: "/public/static/bailey-anselme-unsplash-sharing.png",
     siteName: "Julia Trela Notary Public",
-    titleTemplate: "%s | Julia Trela Notary Public",
+    titleTemplate: "%s",
   },
   plugins: [
     "gatsby-plugin-sass",

@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-		<Seo title="Home" />
+		<Seo title="" />
 		<Navigation link1={content.navigation.link1Name} link2={content.navigation.link2Name} link3={content.navigation.link3Name} />
 		<main id="page-wrap">
 			<BackgroundImage titleFirst={content.heroTitleFirst} titleSecond={content.heroTitleSecond} ariaLabelAltText={content.heroImageAlt} />
