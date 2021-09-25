@@ -35,7 +35,7 @@
 
         label {
             padding: pxToEm(8) 0 pxToEm(8) 0;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $secondary-font;
             font-weight: 700;
         }
 
@@ -61,7 +61,7 @@
 .form__success,
 .form__error {
     color: $black;
-    font-family: 'Work Sans', sans-serif;
+    font-family: $secondary-font;
     padding: pxToEm(10);
     margin-top: pxToEm(10);
 }

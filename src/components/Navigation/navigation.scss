@@ -54,7 +54,7 @@
             }
         
             a {
-                font-family: 'Work Sans', sans-serif;
+                font-family: $secondary-font;
                 font-size: pxToEm(20);
                 letter-spacing: pxToEm(1.5);
                 text-decoration: none;
@@ -115,7 +115,8 @@
         top: 40px;
 
         button:focus {
-            outline: 1px dotted $primary;
+            outline: 1px solid $primary;
+            outline-offset: 2px;
         }
     }
 
@@ -135,7 +136,7 @@
 
         button {
             &:focus {
-                outline: 1px dotted $primary;
+                outline: 1px solid $primary;
             }
         }
     }
@@ -165,7 +166,7 @@
         }
 
         a:not(.btn) {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $secondary-font;
             font-size: pxToEm(20);
             letter-spacing: pxToEm(1.5);
             text-decoration: none;

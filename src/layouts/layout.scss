@@ -8,20 +8,20 @@
 }
 
 a {
-    outline: none;
+    border: 1px solid transparent;
     width: max-content;
-    outline: 1px solid transparent;
     transition: 0.2s ease-in-out;
+    outline: none;
 
     &:focus {
-        outline: 1px dotted $primary;
+        border: 1px solid $primary;
     }
 }
 
 button {
+    border: 1px solid transparent;
     &:focus {
-        outline: 1px solid $black;
-        outline-offset: 2px;
+        border: 1px solid $black;
     }
 }
 
@@ -52,7 +52,7 @@ button {
     }
 
     h1 {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $secondary-font;
         font-weight: 700;
         font-size: pxToEm(45);
         letter-spacing: pxToEm(0.5);
@@ -68,7 +68,7 @@ button {
     }
 
     h2 {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $secondary-font;
         font-size: pxToEm(28);
         font-weight: 700;
         letter-spacing: pxToEm(0.6);
@@ -84,7 +84,7 @@ button {
     }
 
     h3 {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $secondary-font;
         font-size: pxToEm(20);
         letter-spacing: pxToEm(1);
         font-weight: 700;
@@ -95,7 +95,7 @@ button {
     }
 
     p {
-        font-family: 'Lora', sans-serif;
+        font-family: $primary-font;
         font-weight: 400;
         line-height: pxToEm(30);
         margin-bottom: pxToEm(5);
@@ -117,13 +117,13 @@ button {
     }
 
     label, input, textarea {
-        font-family: 'Lora', sans-serif;
+        font-family: $primary-font;
         line-height: pxToEm(30);
         font-size: pxToEm(14);
         resize: none;
 
         &:focus-visible {
-            outline: 1px dotted $primary;
+            outline: 1px solid $primary;
             outline-offset: 1px;
         }
 
@@ -133,7 +133,7 @@ button {
     }
 
     .btn {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $secondary-font;
         padding: 10px 20px;
         outline: none;
         font-weight: 700;
@@ -156,14 +156,14 @@ button {
         }
 
         &:focus {
-            outline: 1px dotted $primary;
+            outline: 1px solid $primary;
             color: $white;
             outline-offset: 2px;
         }
     }
 
     li {
-        font-family: 'Lora', sans-serif;
+        font-family: $primary-font;
         font-size: pxToEm(16);
         padding-bottom: pxToEm(5);
     }
